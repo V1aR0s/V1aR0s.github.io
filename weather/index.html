@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Document</title>
+
+
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@600&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="library/css/demo.css">
+		<link rel="stylesheet" href="library/css/forkit.css">
+	</head>
+
+	<body>
+		<!-- The contents (if there's no contents the ribbon acts as a link) -->
+		<div class="forkit-curtain">
+			<div class="close-button"></div>
+			<div class="main_weather">
+				<div class="name_max_min">
+					<h3>-Weather template-</h3>
+				</div>
+				<div class="input_button">
+					<input type="text" class="city_input" placeholder="input a city pls">
+					<button onclick="func_()">прогноз</button>
+				</div>
+				<div class="param">
+					<div class="name_max_">
+						<h2 class = "name_of_city"></h2>
+						<div class="max_min_temp">
+							<p class="min"></p>
+							<p class="max"></p>
+						</div>
+					</div>
+					
+					<div class="date_weather_temp">
+						<div class="date_">
+							<h3 class="day_name"></h3>
+							<p class="date_full"></p>
+							<p class="wind_"></p>
+							<p class="water_in_wind"></p>
+						</div>
+						<div class="main_img_from_weather">
+
+						</div>
+						<div class="temp__">
+							<h2 class="h2_temp"></h2>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<!-- The ribbon -->
+		<a class="forkit" data-text="-Weather template-" data-text-detached="open">
+			
+		</a>
+		<script src="library/js/forkit.js"></script>
+		<script src="script.js"></script>	
+	</body>
+</html>
