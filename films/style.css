@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.all_films{
+    width: 100%;
+    background:snow;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.film_poster{
+    border: 7px solid darkgrey;
+    margin: 60px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: .6s;
+    background: silver;
+}
+.film_poster:hover{
+    transform:translateY(-20px);
+}
+.film_poster img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    margin-bottom:5px ;
+}
+.film_poster h3{
+    font-size: 25px;
+}
+.film_poster span{
+    font-size: 14px;
+}
+.search{
+    width: 100%;
+}
+.text{
+    max-width: 50%;
+    width: 45%;
+    height: 50px;
+    border: 7px solid rgba(255, 255, 255, .5);
+    @include box-shadow(
+    0 2px 10px rgba(0, 0, 0, .2 5) inset,
+    0 2px 10px rgba(0, 0, 0, .25));
+    @include border-radius(10px);
+    background: rgba(255, 255, 255, .5);
+    @include appearance(none);
+    outline: none;
+    font-family: 'Grandstander', cursive;
+    color: #333;
+}
+.search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.film_input{
+    color: whitesmoke;
+    width: 100%;
+    background: url(https://images.wallpaperscraft.ru/image/tekstura_seryy_volokna_fon_tkan_faktura_50782_1920x1080.jpg);
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    padding: 10px 0 10px 10%;
+    justify-content: space-around;
+}
+.but_search{
+    cursor: pointer;
+    width: 50px;
+    background: url(https://image.flaticon.com/icons/svg/1076/1076336.svg);
+    background-size: 50px;
+    transition: .4s;
+    margin-left:8px;
+    background-repeat: repeat;
+
+}
+.but_search:hover{
+    background: url(https://image.flaticon.com/icons/svg/1076/1076744.svg);
+    background-size: 50px;
+}
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+}
+
+.modal-body img{
+    border: 1px solid black;
+    width: 280px;
+}
+.text_modal_{
+    padding-top:10px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.text_modal_ p{
+    width: 90%;
+    background: rgba(82, 109, 142, .4);
+    margin: 5px 0;
+}
+.text_modal_ span{
+    border-bottom: rgb(82, 170, 142);
+}
+
+.meat_score{
+    border-left: 5px solid salmon;
+    background-color: thistle;
+    width: 90px;
+    color: snow;
+}
