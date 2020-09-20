@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Document</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="pagePiling.js plugin by Alvaro Trigo." />
+	<meta name="keywords"  content="pile,piling,piling.js,stack,pages,scrolling,stacking,touch,fullpile,scroll,plugin,jquery" />
+	<meta name="Resource-type" content="Document" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Kufam:wght@600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../jquery.pagepiling.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+	<script type="text/javascript" src="../jquery.pagepiling.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			* Plugin intialization
+			*/
+	    	$('#pagepiling').pagepiling({
+	          	direction: 'horizontal',
+	    		menu: '#menu',
+	    		anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6','page7', 'page8', 'page8'],
+			    sectionsColor: ['#c65353', 'sandybrown', '#2C3E50', 'orange', 'red', '#2C3E50', '#bdac17', '#2C3E50', 'orange', '#2C3E50'],
+			    navigation: {
+			    	'position': 'right',
+			   		'tooltips': ['Начало', 'Ямато', 'Период Нара', 'Период Хэйне', 'Период Каракуми', 'Период Муромати', 'Адзути-Момояма', 'Период Это', 'Период Сёва', 'конец']
+			   	},
+			    afterRender: function(){
+			    	$('#pp-nav').addClass('custom');
+			    },
+			    afterLoad: function(anchorLink, index){
+			    	if(index>1){
+			    		$('#pp-nav').removeClass('custom');
+			    	}else{
+			    		$('#pp-nav').addClass('custom');
+			    	}
+			    }
+			});
+	    });
+    </script>
+
+
+    <style>
+.o_2{
+	font-size: 45px;
+}
+		.back_first_gif{
+			top: -550px;
+			width: 100%;
+			position: relative;
+			z-index: -3;
+		}
+		.img__{
+			width: 200px;
+		}
+
+		.gallery_first_slide{
+			z-index: 2;
+		}
+	#section1 img{
+		margin: 20px 0;
+		opacity: 1;
+	}
+	.ul_main_{
+		text-transform: lowercase;
+		color: crimson;
+		display: flex;
+		flex-direction: column;
+		font-family: 'Kufam', cursive;
+		align-items: flex-start;
+	}
+	.ul_main_ li{
+		margin: 10px 0;
+		font-size: 26px;
+	}
+	.div_mainj_ul{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	/* colors
+	 * --------------------------------------- */
+	#colors2,
+	#colors3{
+		position: absolute;
+		height: 163px;
+		width: 362px;
+		z-index: 1;
+		background-repeat: no-repeat;
+		left: 0;
+		margin: 0 auto;
+		right: 0;
+	}
+	#colors2{
+		background-image: url(imgs/colors2.gif);
+		top:0;
+	}
+	#colors3{
+		background-image: url(imgs/colors3.gif);
+		bottom:0;
+	}
+
+
+	/* Overwriting fullPage.js tooltip color
+	* --------------------------------------- */
+
+	.gallery_first_slide{
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		flex-direction: row;
+		align-items: flex-end;
+	}
+
+	.h1_first{
+		margin: 40px 0;
+		color: salmon;
+		font-family: 'Kufam', cursive;
+	}
+	
+
+.images_{
+	padding: 40px 0;
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.img_1{
+	width: 280px;
+}
+.img_2{
+	width: 230px;
+	margin-left: -40px;
+}
+.img_3{
+	width: 360px;
+	margin-left: -40px;
+}
+.img_4{
+	width: 420px;
+}
+.text_left_secon{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.text_left_secon1{
+	display: flex;
+	align-items: center;
+}
+.images_1{
+	width: 60%;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+</style>
+
+</head>
+<body>
+
+	<div id="pagepiling">
+	    <div class="section" id="section1">
+			<h1 class="h1_first" style="color: salmon;">Периоды Японской живописи</h1>
+			<div class="div_mainj_ul">
+				<ul class="ul_main_">
+					<li>1)ПЕРИОД Ямато</li>
+					<li>2)ПЕРИОД НАРА</li>
+					<li>3)ПЕРИОД ХЭЙАН</li>
+					<li>4)ПЕРИОД КАМАКУРА</li>
+					<li>5)ПЕРИОД МУРОМАТИ</li>
+				</ul>
+			</div>
+			<img class="back_first_gif" src="../main/img/TenseExcitableGilamonster-small.gif" alt="">
+	    </div>
+	    <div class="section">
+	    	<div class="intro">
+				<div class="text_left_secon">
+					<h1>Ямато (VI–VII века)</h1>
+					<p>
+						Ямато (VI–VII века) — первый период искусства Японии, заложивший начало письменности. 
+						Толчок развитию искусства дали достижения Китая в сферах религии и письменности. Япония
+						 устремилась подняться до его уровня, внося изменения в свое устройство и строя все по подобию Китая. 
+						Для развития живописи в Японию было привезено огромное множество произведений китайских мастеров, которые
+						 вдохновили японцев, смело бросившихся создавать похожие картины.
+					</p>
+					<div class="images_">
+						<a data-fancybox="gallery2" href="img/block1/BxU3OzK3S_c.jpg"><img src="img/block1/BxU3OzK3S_c.jpg" class="img_1"></a>
+						<a data-fancybox="gallery2" href="img/block1/70420e98470f8d860ade83379a870c0b7a24bf27_hq.jpg"><img src="img/block1/small2.jpg"  class="img_1"></a>
+						<a data-fancybox="gallery2" href="img/block1/rospis.jpg"><img src="img/block1/rospis.jpg"  class="img_1"></a>
+						<a data-fancybox="gallery2" href="img/block1/unnamed.jpg"><img src="img/block1/unnamed.jpg"  class="img_1"></a>
+						<a data-fancybox="gallery2" href="img/block1/unnamed (1).jpg"><img src="img/block1/unnamed (1).jpg"  class="img_1"></a>
+					</div>
+				</div>
+	    	</div>
+	    </div>
+	    <div class="section" id="section3">
+	    	<div class="intro">
+				<div class="text_left_secon1">
+					<div>
+						<h1>Период Нара (710–794)</h1>
+						<p>
+							Период назван по местонахождению первой постоянной столицы Японии в Нара. 
+							С дальнейшим процветанием буддизма в Японии развивалась и религиозная живопись. 
+							Самые ранние сохранившиеся картины этого периода включают фрески на стенах внутри храма Хорю-дзи.
+	
+							Эти сцены включат в себя эпизоды из жизни Будды. Стиль изображения напоминает китайскую живопись.
+	
+							Тем не менее период Нара известен больше бурным развитием скульптуры, чем живописи.
+						</p>
+					</div>
+					<div class="images_1">
+						<a data-fancybox="gallery1" href="img/block2/horu-dzi.jpg"><img src="img/block2/horu-dzi.jpg"  class="img_2"></a>
+						<a data-fancybox="gallery1" href="img/block2/unnamed.jpg"><img src="img/block2/unnamed.jpg"  class="img_2"></a>
+						<a data-fancybox="gallery1" href="img/block2/japonskaja-zhivopis-nara.jpg"><img src="img/block2/japonskaja-zhivopis-nara.jpg" class="img_2"></a>
+					</div>
+				</div>
+	    	</div>
+		</div>
+		
+		<div class="section" id="section4">
+	    	<div class="intro">
+				<div class="text_left_secon1">
+					<div class="images_">
+						<a data-fancybox="gallery" href="img/block3/japonskaja-zhivopis-heian-2.jpg"><img src="img/block3/japonskaja-zhivopis-heian-2.jpg" class="img_3"></a>
+					</div>
+					<div>
+						<h2 class="o_2">ПЕРИОД ХЭЙАН(794–1185)</h2>
+						<p>
+							Название периода происходит от местонахождения новой столицы — Хэйан(кё) (совр. Киото). С развитием эзотерических буддийских сект,
+							 живопись 8-го и 9-го веков характеризуется религиозными образами,
+							  в первую очередь Ма́ндала (Ма́ндала - это духовный и ритуальный символ в буддизме, представляющий вселенную).
+						</p>
+						<a data-fancybox="gallery" href="img/block3/img-PNEN9W.jpg"><img src="img/block3/img-PNEN9W.jpg" class="img_3" style="margin-top: 50px;"></a>	
+					</div>
+					<div class="images_">
+						<a data-fancybox="gallery" href="img/block3/Murasaki_Shikibu_Diary_Emakimono_(Gotoh_Museum)_6.jpg"><img src="img/block3/Murasaki_Shikibu_Diary_Emakimono_(Gotoh_Museum)_6.jpg" class="img_3"></a>
+					</div>
+				</div>
+	    	</div>
+		</div>
+		
+		<div class="section" id="section5">
+	    	<div class="intro">
+				<div class="text_left_secon1">
+					<div>
+						<h2 class="o_2">ПЕРИОД КАМАКУРА (1185–1333)</h2>
+						<p>
+							В этот период продолжают развиваться эмаки различных видов, 
+							однако период Камакура был гораздо сильнее охарактеризован искусством скульптуры, чем живописи.
+						</p>
+					</div>
+						<a data-fancybox="gallery4" href="img/block3/japonskaja-zhivopis-heian.jpg"><img src="img/block3/japonskaja-zhivopis-heian.jpg" class="img_4" style="margin-left: -70%;"></a>
+				</div>
+	    	</div>
+		</div>
+		
+		<div class="section" id="section6">
+	    	<div class="intro">
+				<div class="text_left_secon1">
+					<div>
+						<h2 class="o_2">ПЕРИОД МУРОМАТИ (1333–1568)</h2>
+						<p>
+							В течение 14-го века развитие великих дзенских монастырей в Камакуре и Киото оказало большое влияние на изобразительное искусство. Суми-э (墨 絵) или Суйбокуга (水墨画), 
+							строгий монохромный стиль чернильной живописи, зародившийся в Кита, в значительной степени заменил полихромные картины свитков предыдущего периода, хотя сохранилась некоторая 
+							полихромная портретная живопись.Типичным примером такой живописи является изображение монаха-художника Као, который был известен 
+							своим изображением легендарного монаха Кенсу, в тот момент, когда он достиг просветления.Этот стиль живописи был выполнен с быстрыми мазками кисти и минимумом деталей
+						</p>
+					</div>
+						<a data-fancybox="gallery5" href="img/block5/japonskaja-zhivopis-muromachi.jpg"><img src="img/block5/japonskaja-zhivopis-muromachi.jpg" class="img_4" style="margin-left: -70%;"></a>
+						<a data-fancybox="gallery5" href="img/block5/History-of-eastern-painting.jpg"></a>
+						<a data-fancybox="gallery5" href="img/block5/Hyewon-Jusa.geobae.jpg"></a>
+						<a data-fancybox="gallery5" href="img/block5/575225_600.jpg"></a>
+						<a data-fancybox="gallery5" href="img/block5/01_japanese-classic-engraving.jpg"></a>
+						<a data-fancybox="gallery5" href="img/block5/japonskaja-zhivopis-muromachi-2.jpg"></a>
+				</div>
+	    	</div>
+		</div>
+		<!--========================================================================================================= -->
+
+
+		<div class="section" id="section7">
+	    	<div class="intro">
+				<div class="text_left_secon1">
+					<a data-fancybox="gallery6" href="img/block6/japonskaja-zhivopis-azuchi–momoyama.jpg"><img src="img/block6/japonskaja-zhivopis-azuchi–momoyama.jpg" class="img_5" style="margin-left: 20%;"></a>
+					<div>
+						<h2 class="o_2">АДЗУТИ-МОМОЯМА (1568–1600)</h2>
+						<p>
+							Следующий этап Японской живописи Адзути-Момояма, резко контрастировал с предыдущим Муромати.
+							Этому этапу характерен полихромный стиль с широким использованием золотой и серебряной фольги и работами в очень большом масштабе.
+							В то время школа Кано пользовалась большим престижем и известностью.Её основатель Эйтоку Кано разработал технику для создания монументальных пейзажей на раздвижных дверях, 
+							ограждающих помещение.Такие огромные экраны и настенные росписи заказывались для украшения замков и дворцов военной знати.
+						</p>
+					</div>
+						<a data-fancybox="gallery6" href="img/block6/720px-Kano_Eitoku_-_Cypress_Trees.jpg"></a>
+						<a data-fancybox="gallery6" href="img/block6/720px-Kano_Eitoku_002.jpg"></a>
+						<a data-fancybox="gallery6" href="img/block6/720px-Kano_Eitoku_005.jpg"></a>
+						<a data-fancybox="gallery6" href="img/block6/971f33ad6bfbf33567aeb1daef741955.jpg"></a>
+						<a data-fancybox="gallery6" href="img/block6/Birds_and_flowers_of_the_four_seasons_left_site.jpg"></a>
+				</div>
+	    	</div>
+		</div>
+
+		<div class="section" id="section8">
+	    	<div class="intro">
+				<div class="text_left_secon1">
+					<div>
+						<h2 class="o_2">ПЕРИОД ЭДО (1600–1868)</h2>
+						<p>
+							Эдо раннее название города Токио, в этом городе основался сёгунат Токугавы. В течении раннего периода Эдо начали возникать новые тенденции в искусстве.
+							 Одной из самых значимых школ была школа Ринпа, которая использовала классические сюжеты, но представляла их в новом, смелом, декоративном формате.
+							 Другим важным жанром, который начался в период Адзути-Момояма, но который достиг своего полного развития в ранний период Эдо, было искусство намбан 
+							 («южных варваров»). Японцы обычно называли словом намбан всех иноземцев, которых они считали варварами
+						</p>
+					</div>
+					<a data-fancybox="gallery7" href="img/block7/japonskaja-zhivopis-edo.jpg"><img src="img/block7/japonskaja-zhivopis-edo.jpg" class="img_4" style="margin-left: -70%;"></a>
+					<a data-fancybox="gallery7" href="img/block7/japonskaja-zhivopis-edo-2.jpg"></a>
+					<a data-fancybox="gallery7" href="img/block7/31.jpg"></a>
+					<a data-fancybox="gallery7" href="img/block7/550px-Korin_Fujin_Raijin.jpg"></a>
+					<a data-fancybox="gallery7" href="img/block7/7b1a8c5b50fc4af816dd5b2c78be838e.jpg"></a>
+					<a data-fancybox="gallery7" href="img/block7/edo.jpg"></a>
+					<a data-fancybox="gallery7" href="img/block7/yaponskaya_gr_0.jpg"></a>
+				</div>
+	    	</div>
+		</div>
+
+		<div class="section" id="section9">
+	    	<div class="intro">
+				<div class="text_left_secon1">
+					<a data-fancybox="gallery8" href="img/block8/unnamed.jpg"><img src="img/block8/unnamed.jpg" class="img_4" style="margin-left: 20%;"></a>
+					<div>
+						<h2 class="o_2">ПЕРИОД СЁВА (1926–1989)</h2>
+						<p>
+								В японской живописи в довоенный период Сёва в основном доминировало понятие 
+								чистого искусства и абстрактной живописи в традиции Нихонгаи таким образом создали более интерпретирующую версию этого жанра.
+								Для продвижения этих тенденций в 1931 году была создана Независимая художественная ассоциация (Dokuritsu Bijutsu Kyokai).
+						</p>
+						<div class="images_8_">
+
+						</div>
+					</div>
+					<a data-fancybox="gallery8" href="img/block8/japonskaja-zhivopis-okumura-togyu.jpg"></a>
+					<a data-fancybox="gallery8" href="img/block8/japonija_japonskaja_zhivopis.jpg"></a>
+					<a data-fancybox="gallery8" href="img/block8/japan_painting_p_27.jpg"></a>
+					<a data-fancybox="gallery8" href="img/block8/ami5art27-img600x450-1374152579gjedoc79847.jpg"></a>
+					<a data-fancybox="gallery8" href="img/block8/1551688543157545705.jpg"></a>
+				</div>
+	    	</div>
+		</div>
+		<div class="section" id="section10">
+	    	<div class="intro">
+				<div class="text_left_secon1">
+
+				</div>
+	    	</div>
+		</div>
+
+	</div>
+
+
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+</body>
+</html>
