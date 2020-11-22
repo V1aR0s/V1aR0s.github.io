@@ -1,0 +1,372 @@
+body {
+	overflow: hidden;
+	margin: 0;
+	font-family: "Limelight", sans-serif;
+	text-rendering: optimizeLegibility;
+}
+
+.well {
+	position: relative;
+	overflow: hidden;
+	transition: 1s cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+.top {
+	font-size: 80%;
+	color: hsla(0, 0%, 100%, .25);
+	position: relative;
+	top: -.2em;
+	cursor: pointer;
+}
+
+.panel {
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
+	font-size: 30px;
+	padding: 1em;
+	box-sizing: border-box;
+	color: hsla(0, 0%, 100%, .1);
+	cursor: default;
+}
+
+.panel:nth-child(1) {
+	background: linear-gradient(50deg,#3a6186,#89253e);
+	background-size: 200% 200%;
+	animation: anim 10s ease infinite;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+}
+.panel:nth-child(1),h2 {
+	color: snow;
+	font-family: 'Inconsolata', monospace;
+	font-size: 30px;
+}
+.paragraph{
+	font-size: 30px;
+	margin-top: -100px;
+	width: 100%;
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	color: snow;
+}
+.slider{
+	animation: anim1 20s infinite;
+	width: 40%;
+	height: 120%;
+	background-size: cover;
+	background-image: url(../sliderFirstPage/Naberejznaya-Gavani.jpg);
+	background-position: center;
+}
+.Bad{
+	font-size: 15px;
+	color: thistle;
+	margin-top: 10px;
+}
+.paragraph p{
+	width: 50%;
+	padding: 20px;
+
+}
+.backimg{
+	position: absolute;
+	z-index: 3;
+}
+
+@keyframes anim{
+	0%{
+		background-position: 0 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0 50%;
+	}
+}
+@keyframes anim1{
+	25%{
+		background-image: url("../sliderFirstPage/6c4c6cf3ccd146323bec645a9187a612.jpg");
+	}
+	50%{
+		background-image: url("../sliderFirstPage/Gavana_velo-1.png");
+	}
+	75%{
+		background-image: url("../sliderFirstPage/Naberejznaya-Gavani.jpg");
+	}
+	75%{
+		background-image: url("../sliderFirstPage/Gavana_velo-1.png");
+	}
+}
+
+/*второй слайд---------------------------------------------------*/
+.panel:nth-child(2) {
+	display: flex;
+	flex-wrap: wrap;
+	background: #123456;
+}
+.par{
+	display: block;
+	color: aqua;
+	width: 98%;
+	display: flex;
+	justify-content: center;
+}
+.H2Class1{
+	display: block;
+	font-size: 50px;
+	font-family: 'Texturina', serif;
+}
+.second{
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+/*третий слайд---------------------------------------------------*/
+.panel:nth-child(3) {
+	background: url(../css/BackFirst.png) no-repeat;
+	background-size: cover;
+}
+.panel1{
+	width: 100%;
+	margin: auto;
+	flex-direction: row;
+	position: absolute;
+	display: flex;
+	justify-content:space-around;
+	z-index: 1;
+	height: 100%;
+}
+.mouse-parallax{
+	height: 500px;
+	width: 500px;
+	margin-top: 15%;
+	position: relative;
+	overflow: hidden;
+}
+.mouse-parallax-bg{
+	position: absolute;
+	background: url(../gallery/dfs.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 110%;
+	height: 110%;
+	transition: all 0.1s ease;  
+}
+
+.textBlock{
+	margin-top: 15%;
+	width: 50%;
+	flex-wrap: wrap;
+	display: flex;
+	flex-direction: column;
+}
+.textBlock >p{
+	flex-wrap: wrap;
+	display: flex;
+	color: whitesmoke;
+	font-size: 20px;
+}
+.img3 {
+	max-width: 100%;
+	transform: rotate(-45deg) scale(1.42);
+	}
+/*четвертый слайд-------------------------------------------------------*/
+.panel:nth-child(4) {
+	background: linear-gradient(-50deg,#abbae4,#9b3939,#4bc9df);
+	background-size: 200% 200%;
+	animation: anim 4s ease infinite;
+
+}
+.paragraph_{
+	color:  cornsilk;
+}
+.imageEaten{
+background-image: url(/gallery/fufu.jpg);
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+width: 400px;
+height: 300px;
+}
+.fourthBlock{
+	color: black;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+
+}
+.imagesBlock{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+
+}
+.imagesBlock >div{
+	width: 300px;
+	z-index: 4;
+	height: 200px;
+}
+.dss{
+	padding-top: 90px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.img1{
+	background: url(/gallery/fufu.jpg);
+	background-size: cover;
+}
+.spoiler_links{
+	font-size: 45px;
+	text-decoration: none;
+	color: whitesmoke;
+}
+.sdad{
+	font-size: 70px;
+}
+
+.panel:nth-child(5) {
+	background: url(../back.png);
+	background-size: 120% 120%;
+	animation: anim 15s ease infinite;
+}
+
+.panel:nth-child(6) {
+	background: slategray;
+}
+.img_{
+	width: 280px;
+}
+.sd{
+	display: flex;
+	padding: 100px;
+	justify-content: space-around;
+}
+
+/*Figures*/
+.f1{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.figures{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.FirstFigure{
+	width: 300px;
+	height: 250px;
+	background: url(../gallery/last1.jpg);
+	background-size: cover;
+	border-radius: 10%;
+	background-position: center;
+	border: 9px solid white;
+	transition: .8s;
+	cursor: pointer;
+}
+.SFigure{
+	width: 300px;
+	height: 250px;
+	background: url(../gallery/last2.jpg);
+	background-size: cover;
+	background-position: center;
+	border-radius: 10%;
+	border: 9px solid white;
+	transition: .8s;
+	cursor: pointer;
+}
+.TFigure{
+	border-radius: 10%;
+	width: 300px;
+	height: 250px;
+	background: url(../gallery/last3.jpg);
+	background-size: cover;
+	background-position: center;
+	border: 9px solid white;
+	transition: .8s;
+	cursor: pointer;
+}
+.Figure{
+	border-radius: 10%;
+	width: 300px;
+	height: 250px;
+	background: url(../gallery/last4.jpg);
+	background-size: cover;
+	background-position: center;
+	border: 9px solid white;
+	cursor: pointer;
+	transition: .8s;
+}
+
+.FirstFigure:hover{
+	transform: scale(1.2)
+}
+.SFigure:hover{
+	transform: scale(1.2)
+}
+.TFigure:hover{
+	transform: scale(1.2)
+}
+.Figure:hover{
+	transform: scale(1.2)
+	
+}
+.Tourism {
+	font-size: 60px;
+	color: white;
+}
+.par5{
+	font-size: 30px;
+	color: cyan;
+	font-family: 'Big Shoulders Stencil Display', cursive;
+}
+
+.spoiler_links{
+	padding: 5px;
+	width: 100%;
+	cursor: pointer;
+	border-radius: 20px;
+	color: cyan;
+	transition: .5s;
+
+}
+.spoiler_links :hover{
+	background-color: wheat;
+	color: black;
+	transform: scale(1.2);
+	text-decoration: underline;
+}
+
+
+.hidden {
+	opacity:0;
+  }
+  .console-container {
+	font-family: 'Indie Flower', cursive;
+	font-size:90px;
+	text-align:center;
+	height:200px;
+	width:100%;
+	display:block;
+	position:absolute;
+	color:white;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+  }
+  .console-underscore {
+	 display:inline-block;
+	position:relative;
+	top:-0.14em;
+	left:10px;
+  }
