@@ -1,0 +1,17 @@
+.countWrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+   
+
+    flex-direction: column ;
+
+    align-items: center;
+}
+
+.templateText{
+   
+    color: gray;
+    right: 400px;
+    margin-right: 80px;
+}
